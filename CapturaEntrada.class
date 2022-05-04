@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+public class CapturaEntrada {
+    public static int capturaEntero(String cap){
+        Scanner sc = new Scanner(System.in);
+        System.out.print(""+cap+": ");
+        return (sc.nextInt());
+    }
+    public static float capturaFlotante(String cap){
+        Scanner sc = new Scanner(System.in);
+        System.out.print(""+cap+": ");
+        return (sc.nextFloat());
+    }
+    public static double capturaDoble(String cap){
+        Scanner sc = new Scanner(System.in);
+        System.out.print(""+cap+": ");
+        return (sc.nextDouble());
+    }
+    public static String capturaCadena(String cap){
+        Scanner sc = new Scanner(System.in);
+        System.out.print(""+cap+": ");
+        return (sc.nextLine());
+    }
+}
