@@ -1,0 +1,30 @@
+
+public class Magnum_Opus extends Robot implements Acciones{
+    public Magnum_Opus(){
+        super();
+        System.out.println("Configuracion terminada de Magnum_Opus");
+    }
+    @Override
+    public String CortarCarne(){
+        return ( + nombre + "  se cortar carne");
+    }
+    @Override
+    public String PicarVerdura(){
+        return ( + nombre + " se picar verduras");
+    }
+    @Override
+    public String CocinarGuiso(){
+        return ( + nombre +" se cocinar");
+    }
+    @Override
+    public String Servir(){
+        return ( + nombre +" se servir la comida");
+    }
+}
+
+
+
+
+
+
+

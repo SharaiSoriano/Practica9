@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Mini_Robot_Manos_Calientes extends Robot implements Acciones{
+public boolean accionrealizada = false;
+public boolean accionEspecial;
+public Mini_Robot_Manos_Calientes(){
+    super();
+    System.out.println("Terminando de configurar Mini Robot Manos Calientes");
+    }
+    @Override
+    public String CortarCarne(){
+    accionrealizada = true;
+    return ("Soy Mini Robot " + nombre + " y trate de cortar carne");
+    }
+    @Override
+    public String PicarVerdura(){
+    accionrealizada = true;
+    return ("Soy Mini Robot " + nombre + " y trate de picar verduras");
+    }
+    @Override
+    public String CocinarGuiso(){
+    accionrealizada = true;
+    return ("Soy Mini Robot " + nombre +" y se cocinar");
+    }
+    @Override
+    public String Servir(){
+    accionrealizada = true;
+    return ("Soy Mini Robot " + nombre +" y trate de servir la comida");
+    }
+}

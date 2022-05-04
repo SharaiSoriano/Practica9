@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Mini_Robot_Dos_Cuchillos extends Robot implements Acciones{
+        public boolean accionrealizada = false;
+        public boolean accionEspecial;
+        public Mini_Robot_Dos_Cuchillos(){
+        super();
+        System.out.println("Terminando de configurar MiniRobot Dos Cuchillos");
+    }
+    @Override
+    public String CortarCarne(){
+        accionrealizada = true;
+        return ("Soy Mini Robot " + nombre + " y se cortar carne");
+    }
+    @Override
+    public String PicarVerdura(){
+        accionrealizada = true;
+        return ("Soy Mini Robot " + nombre + " y se picar verduras");
+    }
+    @Override
+    public String CocinarGuiso(){
+        accionrealizada = true;
+        return ("Soy Mini Robot " + nombre +" y trate de cocinar");
+    }
+    @Override
+    public String Servir(){
+        accionrealizada = true;
+        return ("Soy Mini Robot " + nombre +" y trate de servir la comida");
+    }
+}
